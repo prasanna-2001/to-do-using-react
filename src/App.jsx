@@ -32,7 +32,7 @@ const deleteItems = (id) =>{
     <>
       <div className="main_div">
         <div className="center_div"><br/>
-          <h1>todo list</h1>
+          <h1>To-Do List</h1>
           <br/>
           <input type="text" placeholder="add tasks" 
            value={inputList}

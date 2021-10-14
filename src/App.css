@@ -6,3 +6,42 @@
   background-color: rgb(101, 103, 223);
   height: 100vh;
 }
+h1{
+  font-size: 50px;
+  background-color: white;
+}
+li{
+  font-size: 20px;
+  display: inline-block;
+  color: white;position: relative;
+  right: 100px;
+
+
+}
+input{
+  height:25px;
+  padding-left: 10px;
+  outline: none;
+}
+button{
+  background-color: transparent;
+  outline: none;
+  position: relative;
+  border: none;
+  padding:10px ;
+  top: 05px;
+  font-size: 25px;
+}
+.todo_style .fa-times-circle{
+  display: inline-block;
+  padding: 10px;
+  color: black;
+  position: relative;
+  right: 100px;
+}
+.fa-times-circle:hover{
+  color: red;
+}
+.fa-plus-square:hover{
+  color: rgb(10, 235, 10);
+}
