@@ -17,6 +17,15 @@ const listOfItems = () =>{
   });
   setInputList("");
 };
+const deleteItems = (id) =>{
+  console.log("deleted");
+  setItems((oldItems) =>{
+    return oldItems.filter((arrElement, index)=>{
+      return index !==id;
+      
+    })
+  })
+}
 
 
   return (
@@ -28,14 +37,17 @@ const listOfItems = () =>{
           <input type="text" placeholder="add tasks" 
            value={inputList}
           onChange={itemEvent}></input>
-          <button onClick={listOfItems}>+</button>
+          <button onClick={listOfItems}><i class="fas fa-plus-square"></i></button>
 
           <ol>
             {/* <li>{inputList}</li> */}
             {
-              Items.map( (itemVal) =>{
+              Items.map( (itemVal, index) =>{
                 return <ToDoList
+                  key={index} 
+                  id={index} 
                   text={itemVal}
+                  onSelect = {deleteItems}
                 />
 
               })
